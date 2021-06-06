@@ -1,0 +1,142 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".add_vehicle">-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:padding="20dp"
+
+        tools:context=".add_vehicle">
+
+        <ImageView
+            android:id="@+id/signup_image"
+            android:layout_width="390dp"
+            android:layout_height="150dp"
+
+            android:src="@drawable/illustration" />
+
+        <TextView
+            android:id="@+id/signup_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/bungee"
+            android:text="ADD Vehicle"
+
+
+            android:textColor="#F7E30D"
+
+            android:textSize="40sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+
+            android:layout_margin="10dp"
+            app:cardElevation="20dp">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_vehicleid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/key"
+                    android:layout_margin="5dp"
+                    android:hint="Vehicle Id"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_name"
+                    android:layout_width="match_parent"
+                    app:startIconDrawable="@drawable/manuser"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Vehicle Owner Name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_vehiclename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/caricon"
+                    android:inputType = "textEmailAddress"
+                    android:layout_margin="5dp"
+                    android:hint="Vehicle Name"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_employeeid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:startIconDrawable="@drawable/manuser"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:hint="Employee ID"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:textColor="#F7E30D"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="Add Vehicle"
+            android:id="@+id/add_vehicle_btn"
+            android:onClick="add_vehicle"
+            android:background="@color/black"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
